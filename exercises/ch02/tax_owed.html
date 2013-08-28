@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Display tax owed</title>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>	
+	<script>
+		var tax_owed = 0;
+		var entry;
+		
+		do {
+			entry = prompt("Enter taxable income as a valid number\n" +
+			               "Or enter 99999 to end entries", 99999);
+			entry = parseInt(entry);
+			
+			// calculate the tax owed here
+			
+			alert("Tax owed is " + tax_owed);
+		}
+		while (entry != 99999);
+	</script>
+</head>
+<body>
+<section>
+    <h1>This page is displayed after the JavaScript is executed</h1>
+</section>
+</body>
+</html>
